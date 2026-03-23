@@ -1,0 +1,25 @@
+/* Minimalism and soft aesthetics */
+::selection {
+    background-color: #D4BBA5;
+    color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle image placeholder transitions (if actual images are loaded) */
+img {
+    transition: opacity 0.5s ease;
+}
+
+/* Basic utilities hiding elements before GSAP handles them */
+.gsap-fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+}
