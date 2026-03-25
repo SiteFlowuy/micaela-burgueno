@@ -46,3 +46,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+document.querySelectorAll('.faq-item').forEach((item) => {
+  const button = item.querySelector('.faq-question');
+
+  button.addEventListener('click', () => {
+    const isActive = item.classList.contains('active');
+
+    document.querySelectorAll('.faq-item').forEach((faq) => {
+      faq.classList.remove('active');
+    });
+
+    if (!isActive) {
+      item.classList.add('active');
+    }
+  });
+});
