@@ -323,3 +323,20 @@ img {
   color: #4A433E;
   transform: translateY(-2px);
 }
+
+.social-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #F8F6F2;
+  color: #4A433E;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+}
+
+.social-row:hover {
+  background: #EADDD7;
+  transform: translateY(-2px);
+}
