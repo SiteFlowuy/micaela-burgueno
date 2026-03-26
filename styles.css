@@ -27,6 +27,7 @@ img {
 
 .premium-image {
     transform: scale(1.01);
+    transition: transform 0.4s ease;
 }
 
 .premium-image:hover {
@@ -359,4 +360,29 @@ img {
   background: #1ebe5d;
   transform: translateY(-2px);
   box-shadow: 0 12px 24px rgba(37, 211, 102, 0.35);
+}
+
+/* Animación hamburguesa → X */
+#menu-toggle.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+#menu-toggle.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Lightbox abierto */
+#lightbox.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Evita scroll del body cuando el lightbox está abierto */
+body.lightbox-open {
+    overflow: hidden;
 }

@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dra. Micaela Burgueño | Odontología y Armonización Facial</title>
     <meta name="description" content="Odontología estética, armonización orofacial e implantes en La Floresta, Uruguay. Dra. Micaela Burgueño.">
-    
+    <!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dra. Micaela Burgueño | Odontología y Armonización Facial">
+<meta property="og:description" content="Odontología estética, armonización orofacial e implantes en La Floresta, Uruguay. Atención personalizada y resultados naturales.">
+<meta property="og:image" content="assets/images/recepcion-clinica.jpg">
+<meta property="og:url" content="https://dramicaelaburgueno.com">
+<meta property="og:locale" content="es_UY">
+
+<!-- WhatsApp / Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dra. Micaela Burgueño | Odontología y Armonización Facial">
+<meta name="twitter:description" content="Odontología estética, armonización orofacial e implantes en La Floresta, Uruguay.">
+<meta name="twitter:image" content="assets/images/recepcion-clinica.jpg">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">    
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2966/2966486.png" type="image/png">
     
 <!-- Tailwind CSS -->
@@ -49,15 +60,31 @@
                 <div class="flex-shrink-0 font-serif text-2xl font-medium tracking-wide">
                     Dra. Micaela Burgueño<span class="text-nude-500">.</span>
                 </div>
+                <!-- Botón hamburguesa (solo mobile) -->
+<button id="menu-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Abrir menú">
+    <span class="block w-6 h-0.5 bg-nude-900 transition-all duration-300"></span>
+    <span class="block w-6 h-0.5 bg-nude-900 transition-all duration-300"></span>
+    <span class="block w-6 h-0.5 bg-nude-900 transition-all duration-300"></span>
+</button>
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#sobre-mi" class="text-sm font-medium hover:text-nude-500 transition-colors">Sobre mí</a>
                     <a href="#tratamientos" class="text-sm font-medium hover:text-nude-500 transition-colors">Tratamientos</a>
                     <a href="#beneficios" class="text-sm font-medium hover:text-nude-500 transition-colors">Por qué elegirnos</a>
                     <a href="https://wa.me/59899842588?text=Hola%2C%20te%20escribo%20desde%20la%20web.%20Me%20gustar%C3%ADa%20consultar%20por%20una%20atenci%C3%B3n."
-                     target="_blank" rel="noopener noreferrer" class="btn-primary">Agendar por WhatsApp</a>
+                     target="_blank" rel="noopener noreferrer" class="whatsapp-btn">Agendar por WhatsApp</a>
                 </div>
             </div>
         </div>
+        <!-- Menú mobile -->
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-nude-100 px-4 py-6 flex flex-col gap-5">
+    <a href="#sobre-mi" class="text-sm font-medium hover:text-nude-500 transition-colors">Sobre mí</a>
+    <a href="#tratamientos" class="text-sm font-medium hover:text-nude-500 transition-colors">Tratamientos</a>
+    <a href="#beneficios" class="text-sm font-medium hover:text-nude-500 transition-colors">Por qué elegirnos</a>
+    <a href="https://wa.me/59899842588?text=Hola%2C%20te%20escribo%20desde%20la%20web.%20Me%20gustar%C3%ADa%20consultar%20por%20una%20atenci%C3%B3n."
+       target="_blank" rel="noopener noreferrer" class="whatsapp-btn text-center">
+        Agendar por WhatsApp
+    </a>
+</div>
     </nav>
 
     <!-- Floating WhatsApp Button -->
@@ -270,32 +297,66 @@ Trabajo con un enfoque integral: no solo busco mejorar la salud bucal, sino tamb
   </div>
 </section>
     <!-- Galería -->
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-6 items-stretch">
-                <div class="relative rounded-[2rem] overflow-hidden min-h-[420px] gsap-fade-up shadow-xl">
-                    <img src="assets/images/procedimiento-consultorio.jpg" alt="Atención odontológica en consultorio" class="absolute inset-0 w-full h-full object-cover premium-image">
-                    <div class="absolute inset-0 bg-gradient-to-t from-nude-900/65 via-nude-900/10 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 p-8 text-white max-w-md">
-                        <span class="uppercase tracking-[0.25em] text-xs text-white/80 block mb-3">Experiencia de consulta</span>
-                        <h3 class="font-serif text-3xl mb-3">Un espacio cuidado, moderno y humano</h3>
-                        <p class="text-white/85 font-light leading-relaxed">Cada detalle del consultorio está pensado para transmitir calma, confianza y atención personalizada desde el primer momento.</p>
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-6 items-stretch">
+
+            <div class="relative rounded-[2rem] overflow-hidden min-h-[420px] gsap-fade-up shadow-xl cursor-pointer"
+                 data-lightbox="assets/images/procedimiento-consultorio.jpg"
+                 data-caption="Atención odontológica en consultorio">
+                <img src="assets/images/procedimiento-consultorio.jpg" 
+                     alt="Atención odontológica en consultorio" 
+                     class="absolute inset-0 w-full h-full object-cover premium-image">
+                <div class="absolute inset-0 bg-gradient-to-t from-nude-900/65 via-nude-900/10 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-8 text-white max-w-md">
+                    <span class="uppercase tracking-[0.25em] text-xs text-white/80 block mb-3">Experiencia de consulta</span>
+                    <h3 class="font-serif text-3xl mb-3">Un espacio cuidado, moderno y humano</h3>
+                    <p class="text-white/85 font-light leading-relaxed">Cada detalle del consultorio está pensado para transmitir calma, confianza y atención personalizada.</p>
+                </div>
+                <!-- Ícono de ampliar -->
+                <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm p-2 rounded-full">
+                    <i data-lucide="zoom-in" class="w-5 h-5 text-white"></i>
+                </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-6">
+                <div class="rounded-[2rem] overflow-hidden min-h-[280px] gsap-fade-up shadow-lg cursor-pointer relative"
+                     data-lightbox="assets/images/instrumental-estetica.jpg"
+                     data-caption="Instrumental para tratamientos estéticos">
+                    <img src="assets/images/instrumental-estetica.jpg" 
+                         alt="Instrumental para tratamientos estéticos" 
+                         class="w-full h-full object-cover premium-image">
+                    <div class="absolute top-3 right-3 bg-white/20 backdrop-blur-sm p-2 rounded-full opacity-0 hover:opacity-100 transition-opacity">
+                        <i data-lucide="zoom-in" class="w-4 h-4 text-white"></i>
                     </div>
                 </div>
-                <div class="grid sm:grid-cols-2 gap-6">
-                    <div class="rounded-[2rem] overflow-hidden min-h-[280px] gsap-fade-up shadow-lg">
-                        <img src="assets/images/instrumental-estetica.jpg" alt="Instrumental para tratamientos estéticos y odontológicos" class="w-full h-full object-cover premium-image">
+
+                <div class="rounded-[2rem] overflow-hidden min-h-[280px] gsap-fade-up shadow-lg cursor-pointer relative"
+                     data-lightbox="assets/images/mesa-clinica.jpg"
+                     data-caption="Mesa preparada para procedimiento">
+                    <img src="assets/images/mesa-clinica.jpg" 
+                         alt="Mesa preparada para procedimiento odontológico" 
+                         class="w-full h-full object-cover premium-image">
+                    <div class="absolute top-3 right-3 bg-white/20 backdrop-blur-sm p-2 rounded-full opacity-0 hover:opacity-100 transition-opacity">
+                        <i data-lucide="zoom-in" class="w-4 h-4 text-white"></i>
                     </div>
-                    <div class="rounded-[2rem] overflow-hidden min-h-[280px] gsap-fade-up shadow-lg">
-                        <img src="assets/images/mesa-clinica.jpg" alt="Mesa preparada para procedimiento odontológico" class="w-full h-full object-cover premium-image">
-                    </div>
-                    <div class="sm:col-span-2 rounded-[2rem] overflow-hidden min-h-[220px] gsap-fade-up shadow-lg">
-                        <img src="assets/images/sonrisa-final.jpg" alt="Resultado estético dental natural" class="w-full h-full object-cover premium-image">
+                </div>
+
+                <div class="sm:col-span-2 rounded-[2rem] overflow-hidden min-h-[220px] gsap-fade-up shadow-lg cursor-pointer relative"
+                     data-lightbox="assets/images/sonrisa-final.jpg"
+                     data-caption="Resultado estético dental natural">
+                    <img src="assets/images/sonrisa-final.jpg" 
+                         alt="Resultado estético dental natural" 
+                         class="w-full h-full object-cover premium-image">
+                    <div class="absolute top-3 right-3 bg-white/20 backdrop-blur-sm p-2 rounded-full opacity-0 hover:opacity-100 transition-opacity">
+                        <i data-lucide="zoom-in" class="w-4 h-4 text-white"></i>
                     </div>
                 </div>
             </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
         <section class="process py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -335,6 +396,43 @@ Trabajo con un enfoque integral: no solo busco mejorar la salud bucal, sino tamb
         </div>
     </div>
     </section>
+
+    <!-- Estadísticas animadas -->
+<section class="py-20 bg-white border-y border-nude-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+
+            <div class="gsap-fade-up" data-counter="500" data-suffix="+" data-label="Pacientes atendidos">
+                <p class="font-serif text-5xl lg:text-6xl text-nude-900 mb-2">
+                    <span class="counter-value">0</span><span class="text-nude-500">+</span>
+                </p>
+                <p class="text-sm text-nude-900/50 font-light uppercase tracking-widest">Pacientes atendidos</p>
+            </div>
+
+            <div class="gsap-fade-up" data-counter="5" data-suffix="★" data-label="Valoración">
+                <p class="font-serif text-5xl lg:text-6xl text-nude-900 mb-2">
+                    <span class="counter-value">0</span><span class="text-nude-500">★</span>
+                </p>
+                <p class="text-sm text-nude-900/50 font-light uppercase tracking-widest">Valoración</p>
+            </div>
+
+            <div class="gsap-fade-up" data-counter="3" data-suffix="+" data-label="Años de experiencia">
+                <p class="font-serif text-5xl lg:text-6xl text-nude-900 mb-2">
+                    <span class="counter-value">0</span><span class="text-nude-500">+</span>
+                </p>
+                <p class="text-sm text-nude-900/50 font-light uppercase tracking-widest">Años de experiencia</p>
+            </div>
+
+            <div class="gsap-fade-up" data-counter="100" data-suffix="%" data-label="Atención personalizada">
+                <p class="font-serif text-5xl lg:text-6xl text-nude-900 mb-2">
+                    <span class="counter-value">0</span><span class="text-nude-500">%</span>
+                </p>
+                <p class="text-sm text-nude-900/50 font-light uppercase tracking-widest">Atención personalizada</p>
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <!-- Beneficios -->
     <section id="beneficios" class="py-24 bg-nude-900 text-white">
@@ -476,8 +574,7 @@ Trabajo con un enfoque integral: no solo busco mejorar la salud bucal, sino tamb
   </div>
 </section>
 
-    <!-- CTA Final -->
-  
+    <!-- CTA Final + Formulario -->
 <section class="cta-final py-24 bg-[#EFEAE4]">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
@@ -489,19 +586,84 @@ Trabajo con un enfoque integral: no solo busco mejorar la salud bucal, sino tamb
       Dá el primer paso para mejorar tu sonrisa
     </h2>
 
-    <p class="text-nude-900/70 font-light leading-relaxed mb-8">
-      Podés hacer tu consulta de forma simple y rápida. Coordinamos tu visita,
-      resolvemos tus dudas y te acompañamos en todo el proceso.
+    <p class="text-nude-900/70 font-light leading-relaxed mb-10">
+      Completá el formulario y te contactamos a la brevedad. También podés escribirnos directo por WhatsApp.
     </p>
 
+    <!-- Formulario -->
+    <div class="bg-white rounded-3xl shadow-sm border border-nude-100 p-8 md:p-12 text-left max-w-2xl mx-auto mb-10">
+      
+      <div id="form-success" class="hidden text-center py-6">
+        <div class="text-4xl mb-4">✉️</div>
+        <h3 class="font-serif text-xl text-nude-900 mb-2">¡Mensaje enviado!</h3>
+        <p class="text-nude-900/60 font-light">Te contactamos a la brevedad.</p>
+      </div>
+
+      <form id="contact-form" action="https://formspree.io/f/xxxxxxxx" method="POST" class="space-y-6">
+        
+        <div>
+          <label for="nombre" class="block text-sm font-medium text-nude-900 mb-2">Nombre</label>
+          <input 
+            type="text" 
+            id="nombre"
+            name="nombre" 
+            required
+            placeholder="Tu nombre"
+            class="w-full px-4 py-3 rounded-xl border border-nude-300 bg-nude-100/30 text-nude-900 placeholder-nude-900/30 focus:outline-none focus:ring-2 focus:ring-nude-500 transition"
+          >
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-nude-900 mb-2">Email</label>
+          <input 
+            type="email" 
+            id="email"
+            name="email" 
+            required
+            placeholder="tu@email.com"
+            class="w-full px-4 py-3 rounded-xl border border-nude-300 bg-nude-100/30 text-nude-900 placeholder-nude-900/30 focus:outline-none focus:ring-2 focus:ring-nude-500 transition"
+          >
+        </div>
+
+        <div>
+          <label for="telefono" class="block text-sm font-medium text-nude-900 mb-2">Teléfono <span class="text-nude-900/40 font-light">(opcional)</span></label>
+          <input 
+            type="tel" 
+            id="telefono"
+            name="telefono"
+            placeholder="099 000 000"
+            class="w-full px-4 py-3 rounded-xl border border-nude-300 bg-nude-100/30 text-nude-900 placeholder-nude-900/30 focus:outline-none focus:ring-2 focus:ring-nude-500 transition"
+          >
+        </div>
+
+        <div>
+          <label for="mensaje" class="block text-sm font-medium text-nude-900 mb-2">¿En qué te podemos ayudar?</label>
+          <textarea 
+            id="mensaje"
+            name="mensaje" 
+            rows="4"
+            required
+            placeholder="Contanos brevemente qué tratamiento te interesa o qué consulta tenés..."
+            class="w-full px-4 py-3 rounded-xl border border-nude-300 bg-nude-100/30 text-nude-900 placeholder-nude-900/30 focus:outline-none focus:ring-2 focus:ring-nude-500 transition resize-none"
+          ></textarea>
+        </div>
+
+        <button 
+          type="submit"
+          id="submit-btn"
+          class="w-full bg-nude-900 text-white py-4 rounded-xl font-medium hover:bg-nude-700 transition-all duration-300"
+        >
+          Enviar consulta
+        </button>
+
+      </form>
+    </div>
+
+    <p class="text-nude-900/50 text-sm font-light mb-6">¿Preferís WhatsApp?</p>
     <a href="https://wa.me/59899842588?text=Hola%2C%20te%20escribo%20desde%20la%20web.%20Me%20gustar%C3%ADa%20consultar%20por%20una%20atenci%C3%B3n." 
        class="whatsapp-btn">
       Agendar por WhatsApp
     </a>
-
-    <p class="mt-4 text-sm text-nude-900/50 font-light">
-  Respuesta rápida · Atención personalizada
-    </p>
 
   </div>
 </section>
@@ -628,6 +790,17 @@ Trabajo con un enfoque integral: no solo busco mejorar la salud bucal, sino tamb
 </div>
 
 </footer>
+
+<!-- Lightbox -->
+<div id="lightbox" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 opacity-0 pointer-events-none transition-opacity duration-300">
+    <button id="lightbox-close" class="absolute top-6 right-6 text-white/70 hover:text-white transition-colors">
+        <i data-lucide="x" class="w-8 h-8"></i>
+    </button>
+    <div class="max-w-4xl w-full mx-4 text-center">
+        <img id="lightbox-img" src="" alt="" class="max-h-[80vh] w-auto mx-auto rounded-2xl shadow-2xl">
+        <p id="lightbox-caption" class="text-white/60 text-sm mt-4 font-light"></p>
+    </div>
+</div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@latest"></script>
